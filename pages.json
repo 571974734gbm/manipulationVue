@@ -1,0 +1,53 @@
+{
+	"easycom": {
+        "^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+    },
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle":"custom" 
+			}
+		},
+		{
+			"path": "pages/appointment/appointment",
+			"style": {}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"backgroundColor": "white",
+		"color": "black",
+		"selectedColor": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tabbar/indexIcon.png",
+				"selectedIconPath": "static/img/tabbar/selectIndexIcon.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/appointment/appointment",
+				"iconPath": "static/img/tabbar/appointmentIcon.png",
+				"selectedIconPath": "static/img/tabbar/selectAppointmentIcon.png",
+				"text": "预约"
+			},
+			{
+				"pagePath": "pages/personal/personal",
+				"iconPath": "static/img/tabbar/personalIcon.png",
+				"selectedIconPath": "static/img/tabbar/selectPersonalIcon.png",
+				"text": "我的"
+			}
+		]
+	}
+}
